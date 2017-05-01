@@ -1,0 +1,31 @@
+
+                            
+/* TEAM */
+
+                            
+开发者：郭郭
+
+                            
+邮箱： missgmy@yahoo.com
+
+                            
+地点： 上海，中国
+						
+
+							
+/* THANKS */
+
+							
+我的女朋友
+						   
+
+                            
+/* SITE */
+                            
+标准： HTML5, CSS3, JavaScript
+
+                            
+组件： jQuery,Swiper
+
+                            
+软件：Sublime Text 3

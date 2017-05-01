@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+}
+.swiper-button-prev,.swiper-button-next{
+    opacity: 0.5;
+}
+.swiper-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    overflow: hidden;
+}
+
+@keyframes title {
+    0%{
+        right: 400px;
+    }
+    40%{
+        right:40px;
+    }
+    50%{
+        right: 60px;
+    }
+    75%{
+        right: 45px;
+    }
+    100%{
+        right: 50px;
+    }
+}
+@keyframes slogan{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    25%{
+        visibility: visible;
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.page0{
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@keyframes round {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
+.page0 .icon{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -130px;
+    top: 50px;
+    color: #fff;
+    opacity: 0.2;
+}
+.page0.animate .icon{
+    animation: round 10s infinite;
+}
+.page0.animate .slogan{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    transform-origin: center bottom;
+    animation: slogan 2s forwards;
+}
+.page0.animate .title{
+    position: absolute;
+    bottom: 300px;
+    animation: title 2s forwards;
+}
+.page1{
+    background: url("../img/bg2.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@keyframes title1 {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(1.5,1.5);
+    }
+    50%{
+        transform: scale(0.6,0.6);
+    }
+    75%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes title2 {
+    from{
+        transform: scale(0.5,0.5);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+.page1.animate .title1{
+    margin: 40px 0 0 40px;
+    animation: title1 3s;
+}
+.page1.animate .title2{
+    margin: 0 0 0 60px;
+    animation: title2 3s;
+}
+.page1 .contentbox{
+    width: 250px;
+    height: 100px;
+    border: 3px solid rgb(168, 184, 208);
+    margin: 50px auto;
+    padding: 0 20px;
+    color: rgb(168, 184, 208);
+    box-sizing: border-box;
+    text-align: justify;
+    border-radius: 10px;
+}
+@keyframes text {
+    from{
+        transform: translateX(-300px) rotate(720deg);
+    }
+    to{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+.page1.animate .text{
+    animation: text 3s;
+}
+@keyframes food {
+    from{
+        margin-top: 300px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+.page1.animate .food{
+    margin-top: 300px;
+    width:100%;
+    height: auto;
+    animation: food 3s;
+    animation-fill-mode:forwards;
+}
+.page2{
+    background: url("../img/bg3.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.page2 img{
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+}
+.page2.animate .icon1{
+    right: 40px;
+    bottom: 150px;
+    opacity: 0.4;
+    width: 100px;
+    height: 100px;
+    animation:round 10s infinite;
+}
+.page2.animate .icon2{
+    right: 20px;
+    bottom: 40px;
+    opacity: 0.4;
+    width: 80px;
+    height: 80px;
+    animation:round 10s infinite;
+}
+.page2.animate .icon3{
+    right: 160px;
+    bottom: 20px;
+    opacity: 0.4;
+    width: 150px;
+    height: 150px;
+    animation:round 10s infinite;
+}
+.page2.animate .title1{
+    bottom: 140px;
+    border-bottom: 1px solid #fff;
+    animation: title2 2s;
+    opacity: 1;
+}
+.page2.animate .title2{
+    bottom: 90px;
+    right: 25px;
+    animation: title2 3s;
+    opacity: 1;
+}
+.page2.animate .title3{
+    bottom: 50px;
+    right: 0;
+    animation: title2 4s;
+    opacity: 1;
+}
+.page3{
+    background: url("../img/bg4.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@keyframes page3show {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.page3 .imgbox{
+    position: absolute;
+    width: 60px;
+    height: 280px;
+    left: 50px;
+    bottom: 200px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.page3 img{
+    width: 40px;
+    height: 280px;
+    margin-left: 15px;
+}
+.page3.animate .icon1{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    position: absolute;
+    left: -30px;
+    top: 80px;
+    opacity: 0.4;
+    animation: round 10s infinite;
+}
+.page3.animate .icon2{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    left: 90px;
+    top: 350px;
+    opacity: 0.4;
+    animation: round 10s infinite;
+}
+.page3.animate .title{
+    animation: page3show 3s;
+}
+.page4{
+    background: url("../img/bg5.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    perspective: 300px;
+}
+.page4.animate .title{
+    width: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    animation: text 3s;
+}
+.page4 #text{
+    width: 220px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    margin: auto;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+@keyframes mask {
+    0%{
+        transform: translateZ(0px) rotateY(0deg);
+    }
+    25%{
+        transform: translateZ(50px) rotateY(180deg);
+    }
+    50%{
+        transform: translateZ(0px) rotateY(360deg);
+    }
+    50%{
+        transform: translateZ(50px) rotateY(180deg);
+    }
+    100%{
+        transform: translateZ(0) rotateY(0deg);
+    }
+}
+.page4 .mask{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 135px;
+    margin: auto;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.3;
+    transform-style: preserve-3d;
+}
+.page4.animate .mask{
+    animation: mask 9s alternate;
+}
+.page5{
+    background: url("../img/bg6.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    perspective: 300px;
+}
+.page5.animate .icon{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.4;
+    animation: round 10s infinite;
+}
+@keyframes page5show {
+    0%{
+        opacity: 0;
+        transform: scale(1,1);
+    }
+    30%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(2,2);
+    }
+}
+.page5.animate .title{
+    opacity: 0;
+    width: 215px;
+    height: 40px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    animation-fill-mode:forwards;
+    animation: page5show 6s;
+}
+.page5.animate .text{
+    width: 180px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    animation: text 10s;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+@keyframes play {
+    0%{
+        opacity: 0;
+        right: 0;
+    }
+    50%{
+        opacity: 1;
+        right: 20px;
+    }
+    100%{
+        opacity: 0;
+        right: 40px;
+    }
+}
+.swiper-button-prev{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: auto;
+    animation: play 2s infinite;
+}
+.music_btn{
+    width: 30px;
+    height: 30px;
+    background: url("../img/music.png");
+    background-size: cover;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    opacity: 0.6;
+    z-index: 100;
+    animation: round 3s infinite;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-play-state: running;
+}
